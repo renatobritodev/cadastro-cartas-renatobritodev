@@ -6,7 +6,7 @@ A empresa MateCheck contratou você para desenvolver a parte inicial do jogo, qu
 
 O desafio está dividido em três níveis: Novato, Aventureiro e Mestre, com cada nível adicionando mais complexidade ao anterior. Você deve escolher qual desafio quer realizar.
 
-### 🚨 Atenção
+## 🚨 Atenção
 
 O nível Novato do desafio é focado apenas no cadastro das cartas, utilizando as funções scanf para ler os dados e printf para exibi-los.
 
@@ -24,12 +24,12 @@ Cada país será dividido em oito estados, identificados pelas letras de A a H. 
   - **PIB**
   - **Número de pontos turísticos**
   
-### ⚙️ Funcionalidades do Sistema
+### ⚙️Funcionalidades do Sistema
 
 - O sistema permitirá ao usuário cadastrar cartas de cidades, inserindo manualmente os dados via terminal de comando.
 - Após o cadastro, o sistema exibirá os dados de cada cidade de forma clara e organizada.
 
-### 📥 Entrada e 📤 Saída de Dados
+### 📥Entrada e 📤Saída de Dados
 
 - O usuário insere os dados de cada carta interativamente.
 - Após o cadastro, os dados são exibidos com todas as propriedades da cidade, uma por linha.
@@ -68,7 +68,7 @@ No nível Mestre, você implementará comparações entre as cartas, utilizando 
   - O sistema permitirá ao usuário comparar duas cartas com base nas propriedades inseridas e calculadas.
   - Cada carta terá um "Super Poder", que é a soma de todas as propriedades.
   
-### ⚙️ Funcionalidades do Sistema
+### ⚙️  Funcionalidades do Sistema
 
 - O sistema utilizará operadores relacionais para determinar a carta vencedora com base nas propriedades comparadas.
 - A comparação considerará:
@@ -76,7 +76,7 @@ No nível Mestre, você implementará comparações entre as cartas, utilizando 
   - **Outras Propriedades:** Vence a carta com maior valor.
 - O resultado das comparações será exibido claramente para cada propriedade.
 
-### 📥 Entrada e 📤 Saída de Dados
+### 📥 Entrada e 📤  Saída de Dados
 
 - O usuário insere as cartas a serem comparadas.
 - O sistema exibe os resultados das comparações, indicando a carta vencedora para cada propriedade.
