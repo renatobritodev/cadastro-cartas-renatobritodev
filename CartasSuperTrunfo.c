@@ -13,14 +13,14 @@ int main()
   char codigo1[4];
   char nomeCidade1[100];
   int populacao1, pontosTuristicos1;
-  float area_total1, pib1, densidade1;
+  float area_total1, pib1, densidade1, pibPerCapita1;
 
   // Declaração de variáveis (Carta 2)
   char estado2;
   char codigo2[4];
   char nomeCidade2[100];
   int populacao2, pontosTuristicos2;
-  float area_total2, pib2, densidade2;
+  float area_total2, pib2, densidade2, pibPerCapita2;
 
   // Área para entrada de dados
 
@@ -31,77 +31,67 @@ int main()
 
   printf("Digite o estado (letra de A a H): ");
   scanf(" %c", &estado1);
-  while ((getchar()) != '\n')
-    ; // Limpa o buffer antes
+  while ((getchar()) != '\n'); // Limpa o buffer antes
 
   printf("Digite o código da carta (Ex.: F01) ");
   scanf("%s", codigo1);
-  while ((getchar()) != '\n')
-    ;
+  while ((getchar()) != '\n');
 
   printf("Digite o nome da cidade: ");
-  scanf(" %s", nomeCidade1);
-  while ((getchar()) != '\n')
-    ;
+  scanf("[^\n]", nomeCidade1);
+  while ((getchar()) != '\n');
 
   printf("Digite a população da cidade: ");
   scanf("%d", &populacao1);
-  while ((getchar()) != '\n')
-    ;
+  while ((getchar()) != '\n');
 
   printf("Digite a área da cidade (em km²): ");
   scanf("%f", &area_total1);
-  while ((getchar()) != '\n')
-    ;
+  while ((getchar()) != '\n');
 
   printf("Digite o PIB da cidade (em bilhões de R$): R$");
   scanf("%f", &pib1);
-  while ((getchar()) != '\n')
-    ;
+  while ((getchar()) != '\n');
 
   printf("Digite o número de pontos turísticos: ");
   scanf("%d", &pontosTuristicos1);
-  while ((getchar()) != '\n')
-    ;
+  while ((getchar()) != '\n');
 
   printf("\n  Cadastro da 2ª carta\n");
 
   printf("Digite o estado (letra de A a H): ");
   scanf(" %c", &estado2);
-  while ((getchar()) != '\n')
-    ;
+  while ((getchar()) != '\n');
 
   printf("Digite o código da carta (Ex.: F01) ");
   scanf("%s", codigo2);
-  while ((getchar()) != '\n')
-    ;
+  while ((getchar()) != '\n');
 
   printf("Digite o nome da cidade: ");
-  scanf(" %s", nomeCidade2);
-  while ((getchar()) != '\n')
-    ;
+  scanf("[^\n]", nomeCidade2);
+  while ((getchar()) != '\n');
 
   printf("Digite a população da cidade: ");
   scanf("%d", &populacao2);
-  while ((getchar()) != '\n')
-    ;
+  while ((getchar()) != '\n');
 
   printf("Digite a área da cidade (em km²): ");
   scanf("%f", &area_total2);
-  while ((getchar()) != '\n')
-    ;
+  while ((getchar()) != '\n');
 
   printf("Digite o PIB da cidade (em bilhões de R$): R$");
   scanf("%f", &pib2);
-  while ((getchar()) != '\n')
-    ;
+  while ((getchar()) != '\n');
 
   printf("Digite o número de pontos turísticos: ");
   scanf("%d", &pontosTuristicos2);
-  while ((getchar()) != '\n')
+  while ((getchar()) != '\n');
 
-    densidade1 = (float)populacao1 / area_total1;
+  densidade1 = (float)populacao1 / area_total1;
   densidade2 = (float)populacao2 / area_total2;
+
+  pibPerCapita1 = (float)pib1 / populacao1;
+  pibPerCapita2 = (float)pib2 / populacao2;
 
   // Área para exibição dos dados da cidade
 
@@ -114,7 +104,8 @@ int main()
   printf("PIB: %.2f\n", pib1);
   printf("Número de Pontos Turísticos: %d\n", pontosTuristicos1);
   printf("Densidade Populacional: %.2f hab/km²\n", densidade1);
-
+  printf("PIB Per Capita: %.2f reais\n", pibPerCapita1);
+  
   printf("\n # Carta 2: \n");
   printf("Estado: %c\n", estado2);
   printf("Código: %s\n", codigo2);
@@ -124,6 +115,7 @@ int main()
   printf("PIB: %.2f\n", pib2);
   printf("Número de Pontos Turísticos: %d\n", pontosTuristicos2);
   printf("Densidade Populacional: %.2f hab/km²\n", densidade2);
+  printf("PIB Per Capita: %.2f reais\n", pibPerCapita2);
 
   return 0;
 }
