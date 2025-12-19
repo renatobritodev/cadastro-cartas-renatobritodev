@@ -38,7 +38,7 @@ int main()
   while ((getchar()) != '\n');
 
   printf("Digite o nome da cidade: ");
-  scanf("[^\n]", nomeCidade1);
+  scanf("%[^\n]", nomeCidade1);
   while ((getchar()) != '\n');
 
   printf("Digite a população da cidade: ");
@@ -68,7 +68,7 @@ int main()
   while ((getchar()) != '\n');
 
   printf("Digite o nome da cidade: ");
-  scanf("[^\n]", nomeCidade2);
+  scanf("%[^\n]", nomeCidade2);
   while ((getchar()) != '\n');
 
   printf("Digite a população da cidade: ");
@@ -101,10 +101,10 @@ int main()
   printf("Nome da cidade: %s\n", nomeCidade1);
   printf("População: %d\n", populacao1);
   printf("Área: %.2f\n", area_total1);
-  printf("PIB: %.2f\n", pib1);
+  printf("PIB: R$%.2f\n", pib1);
   printf("Número de Pontos Turísticos: %d\n", pontosTuristicos1);
   printf("Densidade Populacional: %.2f hab/km²\n", densidade1);
-  printf("PIB Per Capita: %.2f reais\n", pibPerCapita1);
+  printf("PIB Per Capita: R$%.2f\n", pibPerCapita1);
   
   printf("\n # Carta 2: \n");
   printf("Estado: %c\n", estado2);
@@ -112,10 +112,10 @@ int main()
   printf("Nome da cidade: %s\n", nomeCidade2);
   printf("População: %d\n", populacao2);
   printf("Área: %.2f\n", area_total2);
-  printf("PIB: %.2f\n", pib2);
+  printf("PIB: R$%.2f\n", pib2);
   printf("Número de Pontos Turísticos: %d\n", pontosTuristicos2);
   printf("Densidade Populacional: %.2f hab/km²\n", densidade2);
-  printf("PIB Per Capita: %.2f reais\n", pibPerCapita2);
+  printf("PIB Per Capita: R$%.2f\n", pibPerCapita2);
 
   return 0;
 }
