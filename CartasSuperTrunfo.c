@@ -226,7 +226,9 @@ int main()
   }
 
   // Área para exibição dos dados da cidade
-  printf("\n #Carta 1:\n");
+  printf("\n--- DADOS INFORMADOS ---\n");
+
+  printf("\n#Carta 1:\n");
   printf("Estado: %c\n", estado1);
   printf("Código: %s\n", codigo1);
   printf("Nome da cidade: %s\n", nomeCidade1);
@@ -238,7 +240,7 @@ int main()
   printf("PIB Per Capita: R$%.2f\n", pibPerCapita1);
   printf("Super Poder: %.2f\n", superPoder1);
 
-  printf("\n # Carta 2: \n");
+  printf("\n# Carta 2: \n");
   printf("Estado: %c\n", estado2);
   printf("Código: %s\n", codigo2);
   printf("Nome da cidade: %s\n", nomeCidade2);
